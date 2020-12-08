@@ -1,0 +1,273 @@
+//CSS
+
+
+.achivements {
+    font-family: sans-serif;
+    background:rgb(243, 144, 67);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+.features-list .features-description span{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 38px;
+}
+.features-description p{
+    font-weight: bolder;
+    color: white;
+
+}
+.features-heading:before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 8px;
+    background: white;
+}
+h2{
+    font-size: 4em;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+}
+.features-heading p{
+    width: 100%;
+}
+.features-description .description a{
+    background: deepskyblue;
+    padding: 13px 35px;
+    border: 0px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+.features-description p{
+    background: white;
+    padding: 5px;
+    width: 100px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.features-description span{
+    font-size: 37px;
+}
+span.counter{
+    font-size: 55px;
+    color: white;
+}
+#testonimals
+{
+  font-family: tahoma;
+  background: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+#customers-testonimal
+{
+  padding: 40px 0;
+}
+.testonimal img
+{
+  max-width: 159px;
+  /* margin: 0 auto 0 auto; */
+  border: 2px solid rgb(243, 144, 67);
+  padding: 5px;
+  margin-bottom: 13px;
+}
+.testonimal blockquote
+{
+  border: 0;
+  font-family: tahoma;
+  font-size: italic;
+  color: rgb(243, 144, 67);
+  padding: 5px 150px;
+  position: relative;
+}
+.testonimal blockquote::before,
+.testonimal blockquote::after{
+  font-size: 80px;
+  font-size: normal;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.testonimal blockquote::before
+{
+  content: "\201C";
+  top: 0;
+  left: 100px;
+}
+.testonimal blockquote::after
+{
+  content: "\201D";
+  bottom: 0;
+  right: 100px;
+}
+.testonimal-author p
+{
+  color: rgb(243, 144, 67);
+  font-size: 17px;
+}
+.testonimal-author p strong
+{
+  display: block;
+}
+h3
+{
+  color: rgb(243, 144, 67);
+  text-transform: uppercase;
+}
+
+
+//HTML
+
+
+    <section class="achivements">
+        <div class="container">
+            <div class="features-heading">
+                <br>
+                <h2 class="title">
+                    <b>
+                        Achievement
+                    </b>
+                </h2>
+                <br>
+                <p class="description">
+                    Here are a My Achivements As per I've worked. Want to see more?
+                <a href="mailto:atharvagangarde001@gmail.com">
+                  Email me.
+                </a>
+                </p>
+            </div>
+        <br><br><br>
+             <div class="row">
+                 <div class="col-md-2 col-sm-6">
+                     <div class="feature-list">
+                         <img src="icon_counter1.png" alt="">
+                     </div>
+                     <br>
+                     <div class="features-description">
+                         <span class="counter">500</span>
+                         <span>+</span>
+                         <p>
+                             Projects
+                         </p>
+                     </div>
+                 </div>
+                   <div class="col-md-2 col-sm-6">
+                     <div class="feature-list">
+                         <img src="icon_counter3.png" alt="">
+                     </div>
+                     <br>
+                     <div class="features-description">
+                         <span class="counter">15</span>
+                         <span>+</span>
+                         <p>
+                             Happy Clients
+                         </p>
+                     </div>
+                 </div>
+                   <div class="col-md-2 col-sm-6">
+                     <div class="feature-list">
+                         <img src="icon_counter2.png" alt="">
+                     </div>
+                     <br>
+                     <div class="features-description">
+                         <span class="counter">35</span>
+                         <span>+</span>
+                         <p>
+                             Awards
+                         </p>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script type="text/javascript">
+         jQuery(document).ready(function($){
+             $('.counter').counterUp({
+                 delay: 10,
+                 time: 900
+             });
+         });
+     </script>
+      <section id="testonimals">
+        <div id="testonimals-cover">
+          <h3 class="text-center">
+            Testonimal
+          </h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="customers-testonimal" class="text-center-owl-carousel owl-theme">
+                  <div class="testonimal">
+                    <img src="people1.jpg" class="img-reposnive img-circle" alt="">
+                    <blockquote class="text-center">
+                    <p>
+                      Atharv was a real pleasure to work with and we
+                      look forward to working with him again. He’s
+                      definitely the kind of designer you can trust
+                      with a project from start to finish.
+                    </p>
+                    </blockquote>
+                    <div class="testonimal-author">
+                      <p>
+                        <strong>
+                          Dalrae Kim
+                        </strong>
+                        <span>
+                          Marketing Manager - Monginis
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                    <div class="testonimal">
+                      <img src="people2.jpg" class="img-reposnive img-circle" alt="">
+                      <blockquote class="text-center">
+                      <p>
+                        Thank you Atharv for the outstanding professional
+                        job you did for us! I highly recommend you for the
+                        quality and professionalism that I experienced every
+                        step of the way! I look forward to a long lasting
+                        relationship.
+                      </p>
+                      </blockquote>
+                      <div class="testonimal-author">
+                        <p>
+                          <strong>
+                            Alvin Engler
+                          </strong>
+                          <span>
+                            Sr. Systems Developer - Web-Zone
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+        $(function () {
+          $("#customers-testonimal").owlCarousel({
+            items:1,
+            autoplay:true,
+            smartSpeed: 700,
+            look:true,
+            autoPlayHoverPause:true
+          });
+        })
+      </script>
+

@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background:rgba(255, 99, 71, .9);
+  border-radius:2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(255, 99, 71, .9);
+  border-radius:2px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+.fa-times.x2,
+.fa-bars.x2{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    background: ;
+}
+header .logosticky
+{
+    display: none;
+}
+header.sticky
+{
+    padding: 5px 0px;
+    background: rgb(186,222,63);
+    background: linear-gradient(90deg, rgba(186,222,63,1) 0%, rgba(109,198,40,1) 90%);
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    color: aliceblue;
+}
+header .sticky a,
+header .sticky .logo{
+    color: aliceblue;
+}
+header .sticky .logo {
+    display: none;
+}
+header .sticky .logosticky
+{
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 5px 60px;
+}
+.logo img
+{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+    filter: invert(0);
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    margin:   0 15px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 0.6s;
+}
+header ul li a:hover
+{
+    color: aqua;
+    border-bottom: 2px solid aqua;
+}
+.fa-times.x2,
+.fa-bars.x2{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.sec
+{
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+}
+.sec img
+{
+    width: 100%;
+    height: 100%;
+}
+.sec .link p
+{
+    position: relative;
+    display: inline-flex;
+    margin-top: 100vh;
+    width: 15%;
+    margin-left: 800px;
+    justify-content: space-between;
+    font-size: 2em;
+    color: aqua;
+    text-decoration: none;
+}
+.sec .link p a:hover
+{
+    opacity: 0.6;
+    color: #000;
+}
+@media (max-width:1200px){
+    .sec{
+        width: 100%;
+        height: 80vh;
+    }
+}
+/*Work*/
+.container
+{
+  width: 1200px;
+  margin: 0 ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-gap: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 100vh;
+}
+h2{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+  margin : auto;
+  width: 350px;
+  overflow : hidden;
+  border-radius : 20px;
+  background : white;
+  height: 500px;
+  margin-top: 0px;
+  transition: all .2s;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0, .5);
+}
+
+.card:hover {
+  box-shadow:5px 5px 25px rgba(0,0,0, .5);
+/*  transform: translate(-5px, -5px);*/
+}
+
+.card:hover .icon svg{
+  animation : iconjln 1s;
+}
+
+.img-cover{
+  position: relative;
+    display: contents
+}
+
+.card img{
+  width: 250px;
+  height:200px;
+    float: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+.icon{
+  display: none;
+}
+
+.desc{
+  padding : 1.5em ;
+  font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.desc h1{
+  display:inline;
+}
+.tdesc{
+  margin-bottom:40px;
+  width:100%;
+  height:50px;
+  overflow: auto;
+}
+
+.desc p
+{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+.desc a{
+  text-decoration: none;
+  background-color: dodgerblue;
+  padding: 15px 25px;
+  color:white;
+  border-radius: 15px;
+  display:block;
+  text-align: center;
+  transition: all .2s;
+}
+.desc a:hover{
+  background-color: SteelBlue;
+}
+.desc a:hover svg{
+  animation : iconjln 1s;
+}
+
+@keyframes iconjln{
+  0%, 100% {
+    opacity : 1;
+    transform: translateX(0%);
+  }
+  50%{
+    opacity:0;
+    transform: translateX(100%);
+  }
+  70%{
+    opacity:0;
+    transform:translateX(-100%);
+  }
+}
+/*Footer*/
+.footer
+{
+    width: 100%;
+    height: 100vh;
+    background: url(Footer1.jpg);
+    background-size: cover;
+    position: absolute;
+}
+/*Marquee*/
+marquee
+{
+    height: 10vh;
+    background-color: transparent;
+    width: 100%;
+    color: #000;
+    font-size: 2em;
+    transition: 0.5s;
+    margin-top: -150px;
+    font-weight: bold;
+    overflow: hidden;
+    border: 2px solid #000;
+    text-align: center;
+    overflow: hidden;
+}
+/*#Marquee*/
+/*Achivements*/
+.stats
+{
+  width: 100%;
+  display: none;
+}
+/*Footer*/
+.footerinfo
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+    margin: 100px 100px;
+    max-width: 100%;
+    margin-top: 50px;
+}
+.footerinfo h1
+{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.5em;
+    color: darkblue;
+}
+.footerinfo p
+{
+    text-align: center;
+    font-size: 1.em;
+    color: darkblue;
+    text-decoration: none;
+    width: 100%;
+}
+.footerinfo p i
+{
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 15%;
+    font-size: 2em;
+}
+.footerinfo p i:hover{
+    opacity: 0.8;
+    color: aliceblue;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.footerinfo .developer
+{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.developer h6{
+    float: left;
+    font-size: 1em;
+}
+
+.developer h5{
+    float: right;
+    font-size: 1em;
+}
+.box h2{
+    margin-top: 10px;
+    font-size: 1em;
+    color: navy;
+    font-weight: lighter;
+}
+@media (max-width: 500px){
+    .fa-bars.x2{
+        display: block;
+    }
+    .fa-times.x2{
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        display: block;
+    }
+.sec img
+    {
+        display: none;
+    }
+    .sec
+    {
+        width: auto;
+        background: url(mobilebanner.png);
+        background-size: cover;
+        overflow: hidden;
+        height: 100vh;
+    }
+            .fa-times.x2,
+            .fa-bars.x2{
+                font-size: 30px;
+                cursor: pointer;
+                display: none;
+            }
+            header .logo{
+                position: absolute;
+            	top: -10px;
+                left: -35px;
+                font-size: 2.5em;
+                color: #000;
+                font-family: sans-serif;
+            }
+                header ul{
+                    position: fixed;
+                    background: #fff;
+                    top:-20px;
+                    right: 0;
+                    bottom: 0;
+                    height: 60vh;
+                    width: 40%;
+                    float: right;
+                    display: none;
+                    z-index: 1010;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    overflow-y: scroll;
+                }
+                header ul.show{
+                    display: flex;
+                }
+                header ul li{
+                    margin:  10px 0;
+                    font-size: 1em;
+                    color: #fff;
+                    text-decoration: none;
+                }
+                header ul li a{
+                    text-decoration: none;
+                    color: orangered;
+                    font-weight: bolder;
+                    font-family: sans-serif;
+                }
+            header ul li a:hover{
+                color: #000;
+                border-bottom: 2px #000;
+            }
+            .sticky
+            {
+              width: 100%;
+              height: 10vh;
+            }
+            	.fa-bars.x2{
+            		display: block;
+            		position: fixed;
+            		top: 20px;
+            		right: 50px;
+            	}
+            	.fa-times.x2{
+                    color: #000;
+            		position: fixed;
+            		top: 30px;
+            		right: 50px;
+            		display: block;
+                    font-size: 2em;
+            	}
+
+    .container .card
+    {
+        justify-content: center;
+        margin-left: 50px;
+        width: ;
+        height: 480px;
+        margin-top: 50px;
+    }
+
+    marquee
+    {
+        height: 10vh;
+        position: relative;
+        background: #fff;
+        width: 395px;
+        color: #000;
+        font-size: 2em;
+        transition: 0.5s;
+        margin-top: 45vh;
+        font-weight: bold;
+        overflow: hidden;
+        border: 2px solid #000;
+        text-align: center;
+        overflow: hidden;
+    }
+    .footer{
+      position: relative;
+        margin-top: 100px;
+        height: 100vh;
+        width: 395px;
+        background: url(mobile.jpg);
+        background-size: cover;
+        background-repeat: repeat-y;
+        overflow: hidden;
+    }
+    .footer .footerinfo .box h1
+    {
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 368px){
+    .sec{
+        width: 370px;
+        height: 100vh;
+    }
+    .info h2
+    {
+        font-size: 2.3em;
+    }
+    .container .card
+    {
+        justify-content: center;
+        margin-left: 30px;
+        width: ;
+        height: 410px;
+        margin-top: 50px;
+    }
+    .container .card .img-cover img
+    {
+      width: 200px;
+      height: 150px;
+      margin-left: 80px;
+    }
+    .container .card  .desc
+    {
+      margin-left: 10px;
+    }
+    .stats
+    {
+      margin-top: auto;
+    }
+    marquee
+    {
+      margin-top: 100vh;
+    }
+    .footer
+    {
+        height: 160vh;
+    }
+    .footer .developer
+    {
+        display: inline-block;
+    }
+    .footer .developer h6
+    {
+        font-size: 1em;
+    }
+    .footer .developer h5
+    {
+        font-size: 1em;
+        margin: 0px 0px 0px 0px;
+    }
+}
+.achivements
+{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  align-content: center;
+  text-align: center;
+}
+.achivements .ico
+{
+  width: 300px;
+}
+.achivements .statsBox
+{
+  width: 100%;
+  margin: -5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-gap: 20px;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0% 15% 15% 15%;
+  overflow: hidden;
+}
